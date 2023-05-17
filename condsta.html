@@ -1,0 +1,101 @@
+
+<html>
+<body>
+<script>
+
+<!--Voting a person based on the age by using if ,if else statements-->
+function age()
+{
+if(document.getElementById("er").value>=18)
+{
+ window.alert("Eligible to vote");
+}
+else
+{
+window.alert(" Not Eligible to vote");
+}
+}
+</script>
+<h1>Enter the Age of Person:<input type="text" id="er"></h1>
+<button type="button" onclick="age()">SUBMIT</button>
+</body>
+</html>
+<br>
+<br>
+
+
+<html>
+<head>
+<style>
+
+#res{
+background-color:pink;
+font-size:40px;
+color:black;
+}
+</style>
+<body>
+<script>
+
+<!--Voting a person based on the age by using if ,if else statements by using an id-->
+function age()
+{
+if(document.getElementById("er").value>=18)
+{
+ document.getElementById("res").innerHTML="Eligible to vote";
+}
+else
+{
+document.getElementById("res").innerHTML="Not Eligible to vote";
+}
+}
+</script>
+<h1>Enter the Age of Person:<input type="text" id="er"></h1>
+<button type="button" onclick="age()">SUBMIT</button><br>
+<br>
+<div id="res"></div>
+</head>
+</body>
+</html>
+
+
+<html>
+<head>
+<style>
+#res{
+background-color:clack;
+font-size:40px;
+}
+</style>
+</head>
+<script>
+function relation()
+{
+  if(document.getElementById("v1").value==document.getElementById("v2").value)
+{
+     document.getElementById("res").innerHTML="Both are Equal";
+}
+else if (document.getElementById("v1").value>document.getElementById("v2").value)
+{
+   document.getElementById("res").innerHTML="First Person age is greater than Second Person age";
+}
+ else
+{
+ document.getElementById("res").innerHTML="First Person age is smaller than Second Person age";
+}
+}
+</script>
+<body>
+<h1>Enter the 1st person age:<input type="text" id="v1"></h1>
+<h1>Enter the 2st person age:<input type="text" id="v2"></h1>
+<button type="button" onclick="relation()">Relation Of Two Numbers</button>
+</body>
+</html>
+
+
+
+
+
+
+
+

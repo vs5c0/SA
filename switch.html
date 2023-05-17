@@ -1,0 +1,42 @@
+<!-- Switch Case In JavaScript with Example-->
+
+
+<html>
+<script>
+function pv()
+{
+document.getElementById("perc").value=(document.getElementById("om").value/document.getElementById("mx").value)*100
+var percentage=document.getElementById("perc").value;
+document.getElementById("grade").value=" "
+var g;
+switch(Math.floor(percentage/10))
+{
+case 9 : g="Brillant";
+            break;
+case 8 : g="Outstanding";
+            break;
+case 7 : g="Very Good";
+            break;
+case 6 : g="Good";
+            break;
+case 5 : g="Average";
+            break;
+case 4 : g="Pass";
+            break
+default: g="Fail";
+            break;
+}
+document.getElementById("grade").value=g;
+}
+</script>
+<body>
+<h1> PERCENTAGE AND GRADES OF THE STUDENTS</h1>
+
+Max Marks:<input type= text id="mx"><br><br>
+Original  Marks:<input type= text id="om"><br><br>
+<button type="button" onclick="pv()">Submit</button><br><br>
+Percentage :<input type= text id="perc"><br><br>
+Grade :<input type= text id="grade"><br><br>
+</body>
+</html>
+
